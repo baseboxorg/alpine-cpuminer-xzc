@@ -5,6 +5,7 @@ RUN   apk --no-cache upgrade && \
         automake \
         autoconf \
         curl-dev \
+        clang \
         openssl-dev \
         libcurl \
         jansson-dev \
