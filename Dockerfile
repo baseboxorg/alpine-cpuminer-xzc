@@ -1,5 +1,5 @@
 FROM  alpine:latest
-RUN   adduser -S -D -H -h /cpuminer-xzc
+RUN   adduser -S -D -H -h /cpuminer-xzc miner
 RUN   apk --no-cache upgrade && \
       apk --no-cache add \
         automake \
