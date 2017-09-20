@@ -1,4 +1,4 @@
-FROM  alpine:latest
+FROM  baseboxorg/alpine:3.6
 RUN   adduser -S -D -H -h /cpuminer-xzc miner
 RUN   apk --no-cache upgrade && \
       apk --no-cache add \
