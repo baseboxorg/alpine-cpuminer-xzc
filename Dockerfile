@@ -1,7 +1,6 @@
 FROM  baseboxorg/alpine:3.6
 RUN   adduser -S -D -H -h /cpuminer-xzc miner
-RUN   apk --no-cache upgrade && \
-      apk --no-cache add \
+RUN   apk --no-cache add \
         automake \
         autoconf \
         curl-dev \
@@ -24,7 +23,6 @@ RUN   apk --no-cache upgrade && \
         git
         
 USER miner
-
 ENTRYPOINT	["./cpuminer-xzc"]
 
 CMD ["--help"]
