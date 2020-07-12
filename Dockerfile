@@ -1,4 +1,4 @@
-FROM  baseboxorg/alpine:3.6
+FROM  baseboxorg/alpine:3.12
 RUN   adduser -S -D -H -h /cpuminer-xzc miner
 RUN   apk --no-cache add \
         automake \
